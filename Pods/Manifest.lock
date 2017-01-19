@@ -1,11 +1,15 @@
 PODS:
   - Alamofire (4.3.0)
   - Kingfisher (3.2.4)
+  - RongCloudIM/IMKit (2.8.5):
+    - RongCloudIM/IMLib
+  - RongCloudIM/IMLib (2.8.5)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
   - Kingfisher (~> 3.2.1)
+  - RongCloudIM/IMKit (~> 2.8.3)
   - SwiftyJSON (from `https://github.com/acegreen/SwiftyJSON.git`, branch `swift3`)
 
 EXTERNAL SOURCES:
@@ -21,8 +25,9 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
+  RongCloudIM: c38f0afbcb417e735afafbb011ba53c9dd5a9cf2
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 181087a7ff8d791763399a2f8ac065934894d249
+PODFILE CHECKSUM: 8a38fc7c03533e2457af8c00d3f2f296de04113f
 
 COCOAPODS: 1.1.1

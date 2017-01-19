@@ -50,6 +50,10 @@ SOFTWARE.
 
 
 
+## RongCloudIM
+
+Copyright 2014 Rong Cloud
+
 ## SwiftyJSON
 
 The MIT License (MIT)
