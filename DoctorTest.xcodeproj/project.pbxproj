@@ -14,6 +14,12 @@
 		1D3297091E306270002F11EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D3297071E306270002F11EF /* LaunchScreen.storyboard */; };
 		1D3297141E306270002F11EF /* DoctorTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3297131E306270002F11EF /* DoctorTestTests.swift */; };
 		1D32971F1E306270002F11EF /* DoctorTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32971E1E306270002F11EF /* DoctorTestUITests.swift */; };
+		1D3297311E306B49002F11EF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3297301E306B49002F11EF /* BaseViewController.swift */; };
+		1D3297331E306C5F002F11EF /* MianChatListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3297321E306C5F002F11EF /* MianChatListViewController.swift */; };
+		1D3297351E306CB3002F11EF /* DTUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3297341E306CB3002F11EF /* DTUtil.swift */; };
+		1D3297371E306CD4002F11EF /* DTOther.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3297361E306CD4002F11EF /* DTOther.swift */; };
+		1D3297391E306D61002F11EF /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3297381E306D61002F11EF /* BaseTabBarViewController.swift */; };
+		1D32973B1E306DDA002F11EF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D32973A1E306DDA002F11EF /* BaseNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,12 @@
 		1D32971A1E306270002F11EF /* DoctorTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoctorTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D32971E1E306270002F11EF /* DoctorTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTestUITests.swift; sourceTree = "<group>"; };
 		1D3297201E306270002F11EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D3297301E306B49002F11EF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1D3297321E306C5F002F11EF /* MianChatListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MianChatListViewController.swift; sourceTree = "<group>"; };
+		1D3297341E306CB3002F11EF /* DTUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTUtil.swift; sourceTree = "<group>"; };
+		1D3297361E306CD4002F11EF /* DTOther.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTOther.swift; sourceTree = "<group>"; };
+		1D3297381E306D61002F11EF /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		1D32973A1E306DDA002F11EF /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,10 @@
 		1D3296F21E306270002F11EF = {
 			isa = PBXGroup;
 			children = (
+				1D32972C1E306B28002F11EF /* Base */,
+				1D32972D1E306B28002F11EF /* Other */,
+				1D32972E1E306B28002F11EF /* Project */,
+				1D32972F1E306B28002F11EF /* Tool */,
 				1D3296FD1E306270002F11EF /* DoctorTest */,
 				1D3297121E306270002F11EF /* DoctorTestTests */,
 				1D32971D1E306270002F11EF /* DoctorTestUITests */,
@@ -123,6 +139,44 @@
 				1D3297201E306270002F11EF /* Info.plist */,
 			);
 			path = DoctorTestUITests;
+			sourceTree = "<group>";
+		};
+		1D32972C1E306B28002F11EF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1D3297301E306B49002F11EF /* BaseViewController.swift */,
+				1D3297381E306D61002F11EF /* BaseTabBarViewController.swift */,
+				1D32973A1E306DDA002F11EF /* BaseNavigationController.swift */,
+			);
+			name = Base;
+			path = DoctorTest/Base;
+			sourceTree = "<group>";
+		};
+		1D32972D1E306B28002F11EF /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				1D3297361E306CD4002F11EF /* DTOther.swift */,
+			);
+			name = Other;
+			path = DoctorTest/Other;
+			sourceTree = "<group>";
+		};
+		1D32972E1E306B28002F11EF /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				1D3297321E306C5F002F11EF /* MianChatListViewController.swift */,
+			);
+			name = Project;
+			path = DoctorTest/Project;
+			sourceTree = "<group>";
+		};
+		1D32972F1E306B28002F11EF /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				1D3297341E306CB3002F11EF /* DTUtil.swift */,
+			);
+			name = Tool;
+			path = DoctorTest/Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +316,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D32973B1E306DDA002F11EF /* BaseNavigationController.swift in Sources */,
+				1D3297391E306D61002F11EF /* BaseTabBarViewController.swift in Sources */,
+				1D3297371E306CD4002F11EF /* DTOther.swift in Sources */,
 				1D3297011E306270002F11EF /* ViewController.swift in Sources */,
+				1D3297351E306CB3002F11EF /* DTUtil.swift in Sources */,
 				1D3296FF1E306270002F11EF /* AppDelegate.swift in Sources */,
+				1D3297331E306C5F002F11EF /* MianChatListViewController.swift in Sources */,
+				1D3297311E306B49002F11EF /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,6 +572,7 @@
 				1D3297251E306270002F11EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D3297261E306270002F11EF /* Build configuration list for PBXNativeTarget "DoctorTestTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +581,7 @@
 				1D3297281E306270002F11EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D3297291E306270002F11EF /* Build configuration list for PBXNativeTarget "DoctorTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +590,7 @@
 				1D32972B1E306270002F11EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
