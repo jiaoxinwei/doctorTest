@@ -12,8 +12,10 @@ class BaseTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        tabBar.tintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
+        //tabBar.tintColor = UIColor(red: 245 / 255, green: 80 / 255, blue: 83 / 255, alpha: 1.0)
+        tabBar.tintColor=UIColor.black
         // 添加子控制器
+        
         addChildViewControllers()
         // Do any additional setup after loading the view.
     }
@@ -22,41 +24,32 @@ class BaseTabBarViewController: UITabBarController {
         
         
         let homeVC:MianChatListViewController! = MianChatListViewController()
-        /*
-        let messageVC:MessageViewController! = MessageViewController()
-        let mineVC:MineViewController! = MineViewController()
-        let otherVC:OtherViewController! = OtherViewController()
-        */
+        
+        let cricleVC:DTCricleViewController! = DTCricleViewController()
+        let mineVC:DTMyViewController! = DTMyViewController()
         //主页面
         let homeNav:BaseNavigationController = BaseNavigationController(rootViewController: homeVC)
         homeVC.navigationItem.title = "主页"
         //构造器的知识点
-        let homeItem = UITabBarItem(title: "主页", image: UIImage(named: "Home"), selectedImage: nil)
+        let homeItem = UITabBarItem(title: "主页", image: UIImage(named: "bt_bottom_mess0"), selectedImage:UIImage(named: "bt_bottom_mess1"))
         homeNav.tabBarItem = homeItem
         
-        /*
+        
         //消息
-        messageVC.navigationItem.title = "消息"
-        let messageNav:BaseNavigationController = BaseNavigationController(rootViewController: messageVC)
-        let messageItem = UITabBarItem(title: "消息", image: UIImage(named: "BreakNews"), selectedImage: nil)
-        messageNav.tabBarItem = messageItem
-        
-        // 消息
-        otherVC.navigationItem.title = "其他"
-        
-        let otherNav:BaseNavigationController = BaseNavigationController(rootViewController: otherVC)
-        let otherItem = UITabBarItem(title: "其他", image: UIImage(named: "iMessage"), selectedImage: nil)
-        otherNav.tabBarItem = otherItem
+        cricleVC.navigationItem.title = "圈子"
+        let cricleNav:BaseNavigationController = BaseNavigationController(rootViewController: cricleVC)
+        let cricleItem = UITabBarItem(title: "圈子", image: UIImage(named: "bt_bottom_mine0"), selectedImage: UIImage(named: "bt_bottom_mine1"))
+        cricleNav.tabBarItem = cricleItem
         
         
         //我的
         mineVC.navigationItem.title = "我的"
         let mineNav:BaseNavigationController = BaseNavigationController(rootViewController: mineVC)
-        let mineItem = UITabBarItem(title: "我的", image: UIImage(named: "Mine"), selectedImage: nil)
+        let mineItem = UITabBarItem(title: "我的", image: UIImage(named: "bt_bottom_social0"), selectedImage: UIImage(named: "bt_bottom_social1"))
         mineNav.tabBarItem = mineItem
-        */
+        
         self.tabBar.tintColor = UIColor.red
-        self.viewControllers = [homeNav]
+        self.viewControllers = [homeNav,cricleNav,mineNav]
  
         
     }
